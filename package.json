@@ -1,0 +1,63 @@
+{
+  "name": "fast-html-pdf",
+  "version": "1.0.0",
+  "description": "Fast HTML → PDF generator using Playwright. Full CSS support, simple API, perfect for reports, invoices, and documents.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports":{
+    ".":{
+      "types":"./dist/index.d.ts",
+      "import":"./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords":[
+  "html-to-pdf",
+  "pdf-generator",
+  "playwright",
+  "node-pdf",
+  "html2pdf",
+  "pdf-converter",
+  "invoice-pdf",
+  "report-pdf",
+  "document-pdf",
+  "fast-html-pdf"
+  ],
+  "author": {
+    "name": "Nur Mohammad",
+    "url": "https://github.com/nurmhm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nurmhm/fast-html-pdf"
+  },
+  "bugs": {
+    "url": "https://github.com/nurmhm/fast-html-pdf/issues"
+  },
+  "homepage": "https://github.com/nurmhm/fast-html-pdf#readme",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "dev": "tsup src/index.ts --format esm --dts --watch",
+    "type-check": "tsc --noEmit",
+    "lint": "tsc --noEmit && echo 'Type check passed!'",
+    "prepublishOnly": "npm run build && npm run type-check",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "playwright": "^1.58.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
