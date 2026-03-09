@@ -6,10 +6,10 @@
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "exports":{
-    ".":{
-      "types":"./dist/index.d.ts",
-      "import":"./dist/index.js"
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
     }
   },
   "files": [
@@ -17,17 +17,17 @@
     "README.md",
     "LICENSE"
   ],
-  "keywords":[
-  "html-to-pdf",
-  "pdf-generator",
-  "playwright",
-  "node-pdf",
-  "html2pdf",
-  "pdf-converter",
-  "invoice-pdf",
-  "report-pdf",
-  "document-pdf",
-  "fast-html-pdf"
+  "keywords": [
+    "html-to-pdf",
+    "pdf-generator",
+    "playwright",
+    "node-pdf",
+    "html2pdf",
+    "pdf-converter",
+    "invoice-pdf",
+    "report-pdf",
+    "document-pdf",
+    "fast-html-pdf"
   ],
   "author": {
     "name": "Nur Mohammad",
@@ -53,7 +53,7 @@
     "playwright": "^1.58.2"
   },
   "devDependencies": {
-    "@types/node": "^20.11.0",
+    "@types/node": "^20.19.37",
     "tsup": "^8.0.0",
     "typescript": "^5.3.0"
   },
