@@ -1,6 +1,6 @@
 {
   "name": "fast-html-pdf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fast HTML → PDF generator using Playwright. Full CSS support, simple API, perfect for reports, invoices, and documents.",
   "license": "MIT",
   "type": "module",
