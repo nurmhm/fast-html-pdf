@@ -8,13 +8,13 @@
 
 ## Features
 
-✨ **Easy to Use** - Simple, intuitive API  
-🎨 **Full CSS Support** - Style PDFs with complete CSS capabilities  
-📱 **Responsive Design** - Works with modern web technologies  
-⚡ **High Performance** - Fast conversion with reliable output  
-🔧 **Production Ready** - Error handling, type safety, and comprehensive documentation  
-📦 **No Dependencies** - Minimal footprint (Playwright only)  
-🌐 **Batch Processing** - Convert multiple documents efficiently  
+ **Easy to Use** - Simple, intuitive API  
+ **Full CSS Support** - Style PDFs with complete CSS capabilities  
+ **Responsive Design** - Works with modern web technologies  
+ **High Performance** - Fast conversion with reliable output  
+ **Production Ready** - Error handling, type safety, and comprehensive documentation  
+ **No Dependencies** - Minimal footprint (Playwright only)  
+ **Batch Processing** - Convert multiple documents efficiently  
 
 ## Installation
 
@@ -267,12 +267,12 @@ try {
 
 ## Perfect For
 
-📊 **Reports & Analytics** - Generate business reports dynamically  
-💳 **Invoices & Receipts** - Create professional billing documents  
-📜 **Certificates** - Design and generate certificates  
-📋 **Tickets & Passes** - Generate event tickets and boarding passes  
-📑 **Data Export** - Export data as formatted PDFs  
-📮 **Email Attachments** - Generate PDFs for email distribution  
+ **Reports & Analytics** - Generate business reports dynamically  
+ **Invoices & Receipts** - Create professional billing documents  
+ **Certificates** - Design and generate certificates  
+ **Tickets & Passes** - Generate event tickets and boarding passes  
+ **Data Export** - Export data as formatted PDFs  
+ **Email Attachments** - Generate PDFs for email distribution  
 
 ## Performance Tips
 
@@ -320,10 +320,10 @@ See [CHANGELOG.md](./CHANGELOG.md) for version history and updates.
 
 ## Support
 
-- 🐛 [Report Issues](https://github.com/nurmhm/fast-html-pdf/issues)
-- 💬 [Discussions](https://github.com/nurmhm/fast-html-pdf/issues/discussions)
-- 📖 [Documentation](https://github.com/nurmhm/fast-html-pdf/issues#readme)
+-  [Report Issues](https://github.com/nurmhm/fast-html-pdf/issues)
+-  [Discussions](https://github.com/nurmhm/fast-html-pdf/issues/discussions)
+-  [Documentation](https://github.com/nurmhm/fast-html-pdf/issues#readme)
 
 ---
 
-Made with ❤️ by Nur
+Made with ❤️ by Nur Mohammad Akash

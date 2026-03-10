@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2026-03-09
 
 ### Added
-- ✨ Initial stable release
+- Initial stable release
 - Core `htmlToPdfBuffer()` function for in-memory PDF generation
 - Core `htmlToPdfFile()` function for saving PDFs to disk
 - New `htmlToPdfBatch()` function for batch processing multiple documents

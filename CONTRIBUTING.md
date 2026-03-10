@@ -72,15 +72,15 @@ Enhancement suggestions are tracked as GitHub issues. Create an issue and provid
 - Limit the first line to 72 characters or less
 - Reference issues and pull requests liberally after the first line
 - Consider starting the commit message with an applicable emoji:
-  - 🎨 `:art:` when improving the format/structure of the code
-  - 🚀 `:rocket:` when improving performance
-  - 📝 `:memo:` when writing docs
-  - 🐛 `:bug:` when fixing a bug
-  - ✨ `:sparkles:` when introducing a new feature
-  - ⚠️ `:warning:` when dealing with security
-  - ♻️ `:recycle:` when refactoring code
-  - ✅ `:white_check_mark:` when adding tests
-  - 🔧 `:wrench:` when updating configuration files
+  -  `:art:` when improving the format/structure of the code
+  -  `:rocket:` when improving performance
+  -  `:memo:` when writing docs
+  -  `:bug:` when fixing a bug
+  -  `:sparkles:` when introducing a new feature
+  -  `:warning:` when dealing with security
+  -  `:recycle:` when refactoring code
+  -  `:white_check_mark:` when adding tests
+  -  `:wrench:` when updating configuration files
 
 ### TypeScript/JavaScript Styleguide
 
@@ -116,4 +116,4 @@ By contributing to html-string-to-pdf, you agree that your contributions will be
 
 Feel free to create an issue labeled `question`!
 
-Thank you for contributing! 🚀
+Thank you for contributing! 
