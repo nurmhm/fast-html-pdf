@@ -1,8 +1,7 @@
-# fast-html-pdf# fast-html-pdf/issues
-
+# fast-html-pdf
 >  High-performance HTML to PDF converter using Playwright. Simple API with full CSS support, perfect for generating reports, invoices, and documents.
 
-[![npm version](https://img.shields.io/npm/v/fast-html-pdf/issues.svg)](https://www.npmjs.com/package/fast-html-pdf/issues)
+[![npm version](https://img.shields.io/npm/v/fast-html-pdf.svg)](https://www.npmjs.com/package/fast-html-pdf)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js >= 18](https://img.shields.io/badge/node-%3E%3D%2018-brightgreen)](https://nodejs.org/)
 
@@ -19,7 +18,7 @@
 ## Installation
 
 ```bash
-npm install fast-html-pdf/issues
+npm install fast-html-pdf
 ```
 
 **Requirements:**
@@ -31,7 +30,7 @@ npm install fast-html-pdf/issues
 ### Basic Usage
 
 ```typescript
-import { htmlToPdfFile } from 'fast-html-pdf/issues';
+import { htmlToPdfFile } from 'fast-html-pdf';
 
 const html = `
   <h1>Hello World</h1>
@@ -45,7 +44,7 @@ console.log(`PDF saved to: ${path}`);
 ### Get PDF as Buffer
 
 ```typescript
-import { htmlToPdfBuffer } from 'fast-html-pdf/issues';
+import { htmlToPdfBuffer } from 'fast-html-pdf';
 
 const html = '<h1>Hello World</h1>';
 const pdfBuffer = await htmlToPdfBuffer(html);
@@ -58,7 +57,7 @@ response.send(pdfBuffer);
 ### With Custom Styling
 
 ```typescript
-import { htmlToPdfFile } from 'fast-html-pdf/issues';
+import { htmlToPdfFile } from 'fast-html-pdf';
 
 const html = `
   <div class="invoice">
@@ -85,7 +84,7 @@ await htmlToPdfFile(html, './invoice.pdf', {
 ### Batch Processing
 
 ```typescript
-import { htmlToPdfBatch } from 'fast-html-pdf/issues';
+import { htmlToPdfBatch } from 'fast-html-pdf';
 
 const documents = [
   ['<h1>Report 1</h1>', './report1.pdf'],
@@ -113,7 +112,7 @@ Convert HTML to PDF and save to disk.
 
 **Returns:** `Promise<string>` - Absolute path to the saved PDF
 
-**Throws:** `HtmlToPdfError` - If conversion or file write fails
+**Throws:** `FastHtmlPdfError` - If conversion or file write fails
 
 ### `htmlToPdfBuffer(html, options?)`
 
@@ -125,7 +124,7 @@ Convert HTML to PDF and return as Buffer.
 
 **Returns:** `Promise<Buffer>` - PDF content as Buffer
 
-**Throws:** `HtmlToPdfError` - If conversion fails
+**Throws:** `FastHtmlPdfError` - If conversion fails
 
 ### `htmlToPdfBatch(htmlArray, options?)`
 
@@ -137,7 +136,7 @@ Convert multiple HTML documents efficiently.
 
 **Returns:** `Promise<string[]>` - Array of saved file paths
 
-**Throws:** `HtmlToPdfError` - If any conversion fails
+**Throws:** `FastHtmlPdfError` - If any conversion fails
 
 ## Options
 
@@ -157,7 +156,7 @@ interface FastHtmlPdfOptions {
   preferCSSPageSize?: boolean;
   printBackground?: boolean;
   
-  // fast-html-pdf/issues specific options
+  // fast-html-pdf specific options
   waitUntil?: 'load' | 'domcontentloaded' | 'networkidle'; // default: 'networkidle'
   additionalStyles?: string; // CSS to inject into the HTML
   viewport?: { width: number; height: number };
@@ -169,7 +168,7 @@ interface FastHtmlPdfOptions {
 ### Generate Invoice with Dynamic Data
 
 ```typescript
-import { htmlToPdfFile } from 'fast-html-pdf/issues';
+import { htmlToPdfFile } from 'fast-html-pdf';
 
 function generateInvoiceHTML(invoiceData) {
   return `
@@ -227,7 +226,7 @@ await htmlToPdfFile(
 ### Express.js Integration
 
 ```typescript
-import { htmlToPdfBuffer } from 'fast-html-pdf/issues';
+import { htmlToPdfBuffer } from 'fast-html-pdf';
 import express from 'express';
 
 const app = express();
@@ -251,12 +250,12 @@ app.listen(3000);
 ### Error Handling
 
 ```typescript
-import { htmlToPdfFile, HtmlToPdfError } from 'fast-html-pdf/issues';
+import { htmlToPdfFile, FastHtmlPdfError } from 'fast-html-pdf';
 
 try {
   await htmlToPdfFile('<h1>Test</h1>', './output.pdf');
 } catch (error) {
-  if (error instanceof HtmlToPdfError) {
+  if (error instanceof FastHtmlPdfError) {
     console.error('PDF conversion failed:', error.message);
     console.error('Original error:', error.originalError);
   } else {
@@ -322,7 +321,7 @@ See [CHANGELOG.md](./CHANGELOG.md) for version history and updates.
 
 -  [Report Issues](https://github.com/nurmhm/fast-html-pdf/issues)
 -  [Discussions](https://github.com/nurmhm/fast-html-pdf/issues/discussions)
--  [Documentation](https://github.com/nurmhm/fast-html-pdf/issues#readme)
+-  [Documentation](https://github.com/nurmhm/fast-html-pdf/#readme)
 
 ---
 
